@@ -4,13 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     let header = document.querySelector('header');
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
-    let aboutLink = document.querySelector('header nav a[href*="about"]');
+    let links = document.querySelector('header nav a[href*="about"]');
 
     // Toggle menu
     menuIcon.onclick = () => {
         menuIcon.classList.toggle('fa-xmark');
         navbar.classList.toggle('active');
     };
+
+    // Close menu on link click
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuIcon.classList.remove('fa-xmark');
+            navbar.classList.remove('active');
+        });
+    });
 
     // Sticky navbar
     window.addEventListener('scroll', () => {
@@ -32,14 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    aboutLink.addEventListener('click', () => {
+    links.addEventListener('click', () => {
         navLinks.forEach(link => {
             link.classList.remove('active');
         });
-        aboutLink.classList.add('active');
+        links.classList.add('active');
     });
 
     // Initial state
     menuIcon.classList.remove('fa-xmark');
     navbar.classList.remove('active');
 });
+
