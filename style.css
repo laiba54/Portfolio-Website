@@ -1,0 +1,490 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+  background-image: url(/assets/images/img1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 .5rem  rgb(40, 124, 150)
+
+}
+
+.logo{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 1.5rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    color: rgb(40, 124, 150); 
+    transition: 0.3s;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    color: white;
+    display: none;
+
+}
+
+
+/* home section */
+.home{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4rem;
+}
+
+.image{
+    width: 80vh;
+    border-radius: 25px;
+}
+
+.home-content h3{
+   font-size: 1.8rem;
+   font-weight: 600;
+}
+.home-content h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+ }
+span{
+    color: rgb(40, 124, 150);  
+}
+
+.btn{
+    margin-top: 8px;
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color:  rgb(40, 124, 150);
+    border-radius: 8px;
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.about{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4rem;
+}
+
+.heading{
+    font-size: 3rem;
+}
+
+.about-content h3{
+   font-size: 2rem;
+}
+
+/* services */
+
+.Services {
+    padding: 80px 0;
+}
+.services_heading{
+    text-align: center;
+   font-size: 3rem;
+}
+
+.services-content {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services-box {
+    width: 300px;
+    border: 2px solid rgb(40, 124, 150);
+    border-radius: 10px;
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.services-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
+    background-color:rgb(40, 124, 150) ;
+}
+
+.services-box i {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+.services-box h3 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.services-box p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+/* portfolio */
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+.portfolio-box img{
+    width: 100%;
+    transition: transform 0.5s ease;
+    height: 250px;
+}
+
+.portfolio-box {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem rgb(40, 124, 150);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+.portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(40, 124, 150));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+.portfolio-text h4 {
+    font-size: 2rem;
+}
+
+.portfolio-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+/* contact */
+.heading{
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.Contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form-Contact {
+    flex: 0 0 48%;
+}
+
+.Contact-box {
+    flex: 0 0 48%; 
+}
+
+/* Form styles */
+.input-box {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(40, 124, 150);
+    border-radius: 15px;
+    outline: none;
+    resize: none;
+    background: rgba(11, 11, 11, 0.005);
+    color: white;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(40, 124, 150);
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(40, 124, 150);
+}
+
+/* Contact box styles */
+.Contact-card {
+    text-align: center;
+    border: 2px solid rgb(40, 124, 150);
+    border-radius: 10px;
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
+    padding: 20px;
+}
+.Contact-card:hover{
+    background-color: rgb(4, 38, 48);
+}
+.Contact-card i {
+    font-size: 36px;
+    color: rgb(40, 124, 150);
+}
+
+.Contact-card h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+}
+
+.Contact-card p {
+    font-size: 16px;
+    color: white;
+}
+
+.Contact-card a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(40, 124, 150);
+    margin-top: 10px;
+}
+
+/* footer */
+.footer{
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
+    background: rgba(40, 124, 150, 0.126);
+}
+.footer-options a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+.footer-options{
+    text-align: center;
+}
+.footer-options a:hover{
+    color: rgb(40, 124, 150);
+    transition: 0.3s;
+}
+.footer-icons a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 2.5rem;
+    margin-left: 15px;
+}
+.footer-icons{
+    text-align: center;
+}
+.footer-icons a:hover{
+    color: rgb(40, 124, 150);
+    transition: 0.3s;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer h1 a{
+    background-color:rgb(40, 124, 150) ;
+    padding: 5px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 2.5rem;
+}
+
+/* For screens between 768px and 992px (small desktops) */
+@media (max-width: 1200px) {
+    html{
+        font-size: 70%;
+    }
+}
+
+/* For screens larger than 992px (large desktops) */
+@media (max-width: 991px) {
+   section{
+    padding: 10rem 3% 2rem;
+   }
+    .footer h1 a {
+        padding: 5px 18px;
+    }
+}
+@media (max-width: 768px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: rgba(8, 20, 24, 0.868);
+        border-top: .1rem solid rgb(40, 124, 150) ;
+        box-shadow: 0 0 1rem  rgb(40, 124, 150);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content .btn{
+        font-size: 1.5rem;
+    }
+    .image{
+        width: 70vw;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-content h3{
+         font-size: 2rem;
+    }
+    .about-content p{
+        font-size: 1rem;
+   }
+   .about-content .btn{
+    font-size: 1.5rem;
+}
+
+.services-box {
+    width: 100%;
+    margin: 1.5rem;
+}
+.portfolio-box {
+    width: 100%;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact form {
+    width: 100%;
+}
+
+.Contact-card {
+    margin-top: 20px;
+    text-align: center;
+}
+.footer h1{
+    font-size: 2.5rem;
+}
+.footer-options a{
+    font-size: 1.5rem;
+}
+
+}
+
+@media (min-width: 768px) {
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+}
+
+@media (min-width: 1024px) {
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 2rem;
+        color: white;
+    }
+    }
+
