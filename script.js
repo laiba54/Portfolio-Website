@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Deactivate all links and activate only the about link on click
     aboutLink.addEventListener('click', () => {
         navLinks.forEach(link => {
             link.classList.remove('active');
