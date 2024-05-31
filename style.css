@@ -1,20 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
+    
 }
 
-body {
-    background-color: black;
+body{
+  background-color: black;
 }
 
-section {
-    padding: 5rem 9% 2rem;  /* Adjusted padding */
+section{
+    padding: 5rem 9% 2rem; 
 }
 
-.header {
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -23,18 +24,19 @@ section {
     padding: 10px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 .5rem rgb(40, 124, 150);
+    box-shadow: 0 0 .5rem  rgb(40, 124, 150)
+
 }
 
-.logo {
+.logo{
     color: white;
     font-size: 1.5rem;
-    margin-left: 4rem;
+    margin-left: 3rem;
     font-weight: 500;
     cursor: default;
 }
 
-.navbar a {
+.navbar a{
     font-size: 1.1rem;
     text-decoration: none;
     color: white;
@@ -42,87 +44,85 @@ section {
     transition: 0.3s;
 }
 
-.navbar a:hover,
-.navbar a.active {
-    color: rgb(40, 124, 150);
+.navbar a:hover ,
+.navbar a.active{
+    color: rgb(40, 124, 150); 
     transition: 0.3s;
 }
 
-#menu-icon {
+#menu-icon{
     font-size: 2rem;
     color: white;
     display: none;
+
 }
+
 
 /* home section */
-.home {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+.home{
+    margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4rem;
 }
 
-.image {
+.image{
     width: 80vh;
     border-radius: 25px;
 }
 
-.home-content h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
+.home-content h3{
+   font-size: 1.8rem;
+   font-weight: 600;
 }
-
-.home-content h1 {
+.home-content h1{
     font-size: 2.8rem;
     font-weight: 700;
+ }
+span{
+    color: rgb(40, 124, 150);  
 }
 
-span {
-    color: rgb(40, 124, 150);
-}
-
-.btn {
+.btn{
     margin-top: 8px;
     font-size: 1rem;
     color: white;
     padding: 0.5rem 1rem;
-    background-color: rgb(40, 124, 150);
+    background-color:  rgb(40, 124, 150);
     border-radius: 8px;
-    box-shadow: 0 0 1rem rgb(40, 124, 150);
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
     font-weight: 500;
     transition: 0.3s;
 }
 
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+.about{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4rem;
 }
 
-.heading {
+.heading{
     font-size: 3rem;
-    margin-bottom: 2rem;  /* Adjusted margin */
 }
 
-.about-content h3 {
-    font-size: 2rem;
+.about-content h3{
+   font-size: 2rem;
 }
 
 /* services */
 
 .Services {
-    padding: 5rem 0;  /* Adjusted padding */
+    padding: 80px 0;
 }
-
-.services_heading {
+.services_heading{
     text-align: center;
-    font-size: 3rem;
+   font-size: 3rem;
 }
 
 .services-content {
-    margin-top: 2rem;  /* Adjusted margin */
+    margin-top: 3rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -133,7 +133,7 @@ span {
     width: 300px;
     border: 2px solid rgb(40, 124, 150);
     border-radius: 10px;
-    box-shadow: 0 0 1rem rgb(40, 124, 150);
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
     padding: 20px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
@@ -141,8 +141,8 @@ span {
 
 .services-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 1rem rgb(40, 124, 150);
-    background-color: rgb(40, 124, 150);
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
+    background-color:rgb(40, 124, 150) ;
 }
 
 .services-box i {
@@ -152,7 +152,6 @@ span {
     display: block;
     text-align: center;
 }
-
 .services-box h3 {
     font-size: 24px;
     color: white;
@@ -169,7 +168,7 @@ span {
 /* portfolio */
 
 .portfolio h2 {
-    margin-bottom: 2rem;  /* Adjusted margin */
+    margin-bottom: 4rem;
     text-align: center;
     color: white;
 }
@@ -182,7 +181,7 @@ span {
     color: white;
 }
 
-.portfolio-box img {
+.portfolio-box img{
     width: 100%;
     transition: transform 0.5s ease;
     height: 250px;
@@ -199,7 +198,6 @@ span {
 .portfolio-box:hover img {
     transform: scale(1.1);
 }
-
 .portfolio-layer {
     position: absolute;
     bottom: 0;
@@ -216,7 +214,6 @@ span {
     transform: translateY(100%);
     transition: 0.5s ease;
 }
-
 .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
 }
@@ -231,12 +228,11 @@ span {
 }
 
 /* contact */
-.heading {
+.heading{
     color: white;
     text-align: center;
-    margin-bottom: 2rem;  /* Adjusted margin */
+    margin-bottom: 3rem;
 }
-
 .Contact {
     display: flex;
     justify-content: space-between;
@@ -248,7 +244,7 @@ span {
 }
 
 .Contact-box {
-    flex: 0 0 48%;
+    flex: 0 0 48%; 
 }
 
 /* Form styles */
@@ -273,7 +269,7 @@ textarea {
 input[type="submit"] {
     padding: 10px 20px;
     background-color: rgb(40, 124, 150);
-    box-shadow: 0 0 1rem rgb(40, 124, 150);
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
     color: white;
     border: none;
     border-radius: 10px;
@@ -289,14 +285,12 @@ input[type="submit"]:hover {
     text-align: center;
     border: 2px solid rgb(40, 124, 150);
     border-radius: 10px;
-    box-shadow: 0 0 1rem rgb(40, 124, 150);
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
     padding: 20px;
 }
-
-.Contact-card:hover {
+.Contact-card:hover{
     background-color: rgb(4, 38, 48);
 }
-
 .Contact-card i {
     font-size: 36px;
     color: rgb(40, 124, 150);
@@ -321,53 +315,46 @@ input[type="submit"]:hover {
 }
 
 /* footer */
-.footer {
-    box-shadow: 0 0 1rem rgb(40, 124, 150);
+.footer{
+    box-shadow: 0 0 1rem  rgb(40, 124, 150);
     background: black;
 }
-
-.footer-options a {
+.footer-options a{
     text-decoration: none;
     color: white;
     transition: 0.3s;
     font-size: 1.5rem;
     margin-left: 15px;
 }
-
-.footer-options {
+.footer-options{
     text-align: center;
 }
-
-.footer-options a:hover {
+.footer-options a:hover{
     color: rgb(40, 124, 150);
     transition: 0.3s;
 }
-
-.footer-icons a {
+.footer-icons a{
     text-decoration: none;
     color: white;
     transition: 0.3s;
     font-size: 2.5rem;
     margin-left: 15px;
 }
-
-.footer-icons {
+.footer-icons{
     text-align: center;
 }
-
-.footer-icons a:hover {
+.footer-icons a:hover{
     color: rgb(40, 124, 150);
     transition: 0.3s;
 }
-
-.footer p {
+.footer p{
     color: white;
     text-align: center;
     margin-top: 1rem;
 }
 
-.footer h1 a {
-    background-color: rgb(40, 124, 150);
+.footer h1 a{
+    background-color:rgb(40, 124, 150) ;
     padding: 5px 18px;
     border-radius: 5px;
     text-decoration: none;
@@ -376,99 +363,125 @@ input[type="submit"]:hover {
     font-size: 2.5rem;
 }
 
-/* For screens between 768px and 992px */
-@media (max-width: 992px) {
-    .home {
-        gap: 2rem;
-    }
-
-    .home-content h1 {
-        font-size: 2rem;
-    }
-
-    .home-content h3 {
-        font-size: 1.2rem;
-    }
-
-    .image {
-        width: 60vh;
-    }
-
-    .btn {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.8rem;
-    }
-
-    .services-content {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .services-box {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .portfolio-content {
-        grid-template-columns: 1fr 1fr;
+/* For screens between 768px and 992px (small desktops) */
+@media (max-width: 1200px) {
+    html{
+        font-size: 70%;
     }
 }
 
-/* For screens 768px and below */
+/* For screens larger than 992px (large desktops) */
+@media (max-width: 991px) {
+   section{
+    padding: 10rem 3% 2rem;
+   }
+    .footer h1 a {
+        padding: 5px 18px;
+    }
+}
 @media (max-width: 768px) {
-    .home {
-        flex-direction: column;
+    #menu-icon{
+        display: block;
     }
-
-    .home-content {
-        text-align: center;
-    }
-
-    .navbar {
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: black;
+        border-top: .1rem solid rgb(40, 124, 150) ;
+        box-shadow: 0 0 1rem  rgb(40, 124, 150);
         display: none;
     }
-
-    .header {
-        justify-content: space-between;
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
     }
 
-    .logo {
-        margin-left: 0;
-    }
-
-    .services-content {
+    .home{
         flex-direction: column;
         align-items: center;
     }
-
-    .portfolio-content {
-        grid-template-columns: 1fr;
+    .home-content .btn{
+        font-size: 1.5rem;
     }
-
-    #menu-icon {
-        display: block;
+    .image{
+        width: 70vw;
     }
-
-    .navbar {
-        display: none;
+    .about{
+        flex-direction: column-reverse;
     }
-
-    .navbar.active {
-        display: block;
-        position: fixed;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        padding-top: 6rem;
-        text-align: center;
+    .about-content h3{
+         font-size: 2rem;
     }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 1rem 0;
-    }
+    .about-content p{
+        font-size: 1rem;
+   }
+   .about-content .btn{
+    font-size: 1.5rem;
 }
+
+.services-box {
+    width: 100%;
+    margin: 1.5rem;
+}
+.portfolio-box {
+    width: 100%;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact form {
+    width: 100%;
+}
+
+.Contact-card {
+    margin-top: 20px;
+    text-align: center;
+}
+.footer h1{
+    font-size: 2.5rem;
+}
+.footer-options a{
+    font-size: 1.5rem;
+}
+
+}
+
+@media (min-width: 768px) {
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+}
+
+@media (min-width: 1024px) {
+    .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 2rem;
+        color: white;
+    }
+    }
+
