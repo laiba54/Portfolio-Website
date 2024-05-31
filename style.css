@@ -382,6 +382,7 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
     #menu-icon{
         display: block;
+        margin-right: 20px;
     }
     .navbar{
         position: absolute;
