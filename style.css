@@ -416,6 +416,9 @@ input[type="submit"]:hover {
     .about{
         flex-direction: column-reverse;
     }
+     .about-content{
+       margin-left: 20px;
+    }
     .about-content h3{
          font-size: 2rem;
     }
