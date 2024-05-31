@@ -8,10 +8,7 @@
 }
 
 body{
-  background-image: url(assets/images/img1.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
 }
 
 section{
@@ -320,7 +317,7 @@ input[type="submit"]:hover {
 /* footer */
 .footer{
     box-shadow: 0 0 1rem  rgb(40, 124, 150);
-    background: rgba(15, 34, 41, 0.402);
+    background: black;
 }
 .footer-options a{
     text-decoration: none;
@@ -392,7 +389,7 @@ input[type="submit"]:hover {
         left: 0;
         width: 100%;
         padding: 1rem 3%;
-        background:  rgb(19, 51, 60);
+        background: black;
         border-top: .1rem solid rgb(40, 124, 150) ;
         box-shadow: 0 0 1rem  rgb(40, 124, 150);
         display: none;
